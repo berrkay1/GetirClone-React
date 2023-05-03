@@ -2,7 +2,12 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <div className='bg-white w-full'>
+      <div className='container mx-auto'>
+          <div className='text-[16px] font-semibold mb-2'>Katogoriler</div>
+      </div>
+
+    </div>
   )
 }
 
