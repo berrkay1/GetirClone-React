@@ -7,7 +7,7 @@ import { FaUserPlus } from 'react-icons/fa'
 
 const Header = () => {
     return (
-        <div className=' bg-headerColor  h-12 flex items-center'>
+        <div className=' bg-headerColor  h-12 flex items-center sticky top-0 z-20'>
             <div className='container mx-auto flex items-center justify-between'>
                 <nav className='flex items-center gap-x-4'>
                     <a href="#" className='text-[#FFD300] text-[17px] font-semibold text-opacity-100  '>

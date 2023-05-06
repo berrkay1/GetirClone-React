@@ -21,7 +21,7 @@ const HeaderSection = () => {
 
 
   return (
-    <div className='relative before:bg-gradient-to-r before:from-[#5D3EBC] before:to-transparent before:absolute before:top-0 before:left-0 before:z-20 before:w-full before:h-full h-[500px]'  >
+    <div className='relative before:bg-gradient-to-r before:from-[#5D3EBC] before:to-transparent before:absolute before:top-0 before:left-0 before:z-20 before:w-full before:h-full h-[500px] z-0'  >
 
       <Slider {...settings}>
         <div>

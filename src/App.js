@@ -7,12 +7,12 @@ import MobileAppBar from "./components/MobileAppBar";
 
 function App() {
   return (
-    <div>
+    <div className="relative">
       <Header />
       <HeaderSection />
       <Categories />
-      <MobileAppBar />
       <Campaign />
+      <MobileAppBar />
       <Footer />
     </div>
   );
