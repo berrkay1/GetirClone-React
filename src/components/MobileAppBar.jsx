@@ -3,8 +3,8 @@ import CampaigCart from './CampaigCart'
 
 const MobileAppBar = () => {
   return (
-    <div className=' w-full'>
-      <div className='container mx-auto mt-8 flex items-center justify-center space-x-4 flex-wrap '>
+    <div className=' w-full container mx-auto'>
+      <div className='grid grid-cols-3 gap-x-4 '>
         <CampaigCart
           img={'https://getir.com/_next/static/images/intro-in-minutes-a7a9238a73013642a6597c4db06653c1.svg'}
           title='Her siparişinize bir kampanya'
