@@ -1,8 +1,11 @@
 import React from 'react'
+import VideoSection from '../components/getirBuyuk/VideoSection'
 
 const GetirYemek = () => {
     return (
-        <div>GetirYemek</div>
+        <div>
+              <VideoSection />
+        </div>
     )
 }
 

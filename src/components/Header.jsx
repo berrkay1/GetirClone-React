@@ -11,7 +11,7 @@ const Header = () => {
     const location = useLocation();
     const activePage = location.pathname;
 
-
+console.log('activePage', activePage)
     return (
         <div className=' bg-headerColor  h-12 flex items-center sticky top-0 z-20'>
             <div className='container mx-auto flex items-center justify-between'>
@@ -22,7 +22,7 @@ const Header = () => {
                         </div>
                     </Link>
                     <Link to={'/getiryemek'}>
-                        <div className={` text-[17px] font-semibold `}>
+                        <div className={`text-[17px] font-semibold `}>
                             <span
                                 className={`hover:bg-[#5D3EBC] p-[13px] pt-1 rounded-t-md text-${activePage == '/getiryemek' ? '[#FFD300]' : 'white'} text-opacity-${activePage == '/getiryemek' ? '100' : '80'} bg-${activePage == '/getiryemek' ? '[#5D3EBC]' : ''}`}>
                                 getir

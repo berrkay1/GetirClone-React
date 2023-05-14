@@ -1,5 +1,4 @@
 import React from 'react'
-
 import HeaderSection from '../components/HeaderSection'
 import Categories from '../components/Categories'
 import Campaign from '../components/Campaign'
