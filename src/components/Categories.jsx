@@ -6,7 +6,7 @@ const Categories = () => {
   return (
     <div className='bg-white w-full shadow-2xl z-40'>
       <div className='container mx-auto py-6'>
-        <div className='text-[16px] font-semibold mb-2 text-gray-700'>Katogoriler</div>
+        <div className='text-[16px] font-semibold mb-2 text-gray-700'>Kategoriler</div>
         <div className='grid grid-cols-10 gap-4'>
           {
             CategoriesJson.map((item, idx) => (

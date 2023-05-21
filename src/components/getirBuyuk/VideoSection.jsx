@@ -29,7 +29,7 @@ const VideoSection = () => {
 
     },[currentVideoIndex])
 
-    console.log('currentVideoIndex', currentVideoIndex)
+   
     return (
         <div className=' w-full h-[600px] '>
             {
