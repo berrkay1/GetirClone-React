@@ -11,6 +11,8 @@ module.exports = {
       },
       backgroundImage: {
         kampanyaBG: "url('../public/images/doodle.png')",
+        kampanyaBG2: "url('../public/images/doodle2.jpg')",
+        
       },
     },
   },
