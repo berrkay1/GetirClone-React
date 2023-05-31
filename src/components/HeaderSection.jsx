@@ -40,7 +40,7 @@ const HeaderSection = () => {
       </Slider>
 
       <div className='container absolute top-0 text-white z-30 w-full h-full flex items-center justify-between  left-1/2 -translate-x-1/2'>
-        <div className='text-4xl font-semibold '>
+        <div className='text-4xl font-semibold sm:hidden md:block'>
           <img className='w-[180px]' src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" alt="" />
 
           <div className='mt-10'>
@@ -49,7 +49,7 @@ const HeaderSection = () => {
           </div>
         </div>
 
-        <div className='bg-[#FAFAFA] p-6 rounded-lg w-[400px]'>
+        <div className='bg-[#FAFAFA] p-6 rounded-lg w-[400px] sm:w-full '>
           <h5 className=' text-[#5d3ebc] text-center text-[16px] font-semibold'>Giriş yap veya kayıt ol</h5>
           <div className='flex items-center justify-center my-4 w-full gap-x-2'>
             <ReactFlagsSelect

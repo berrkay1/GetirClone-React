@@ -66,16 +66,16 @@ console.log('activePage', activePage)
                 <nav className='flex items-center gap-x-9'>
                     <a href="#" className='text-[white] text-[14px] font-normal text-opacity-80 flex items-center  '>
                         <RiGlobalLine size={19} />
-                        <span className='pl-2'>Türkçe (TR)</span>
+                        <span className='pl-2 sm:hidden lg:block'>Türkçe (TR)</span>
                     </a>
                     <a href="#" className='text-white text-[14px] font-normal text-opacity-80 flex items-center'>
                         <FaUser size={19} />
-                        <span className='pl-2'> Giriş Yap</span>
+                        <span className='pl-2 sm:hidden lg:block'> Giriş Yap</span>
 
                     </a>
                     <a href="#" className='text-white text-[14px] font-normal text-opacity-80 flex items-center'>
                         <FaUserPlus size={19} />
-                        <span className='pl-2'> Kayıt Ol</span>
+                        <span className='pl-2 sm:hidden lg:block '> Kayıt Ol</span>
 
                     </a>
 
