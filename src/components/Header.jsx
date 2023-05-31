@@ -13,8 +13,8 @@ const Header = () => {
 
 console.log('activePage', activePage)
     return (
-        <div className=' bg-headerColor  h-12 flex items-center sticky top-0 z-20'>
-            <div className='container mx-auto flex items-center justify-between'>
+        <div className=' bg-headerColor sticky top-0 z-20'>
+            <div className='container mx-auto h-12 flex items-center justify-between'>
                 <nav className='flex items-center gap-x-4'>
                     <Link to={'/'} >
                         <div className={`text-${activePage == '/' ? '[#FFD300]' : 'white'} text-[17px] font-semibold text-opacity-${activePage == '/' ? '100' : '80'}`}>
@@ -64,17 +64,17 @@ console.log('activePage', activePage)
                 </nav>
 
                 <nav className='flex items-center gap-x-9'>
-                    <a href="#" className='text-[white] text-[16px] font-normal text-opacity-80 flex items-center  '>
-                        <RiGlobalLine size={20} />
+                    <a href="#" className='text-[white] text-[14px] font-normal text-opacity-80 flex items-center  '>
+                        <RiGlobalLine size={19} />
                         <span className='pl-2'>Türkçe (TR)</span>
                     </a>
-                    <a href="#" className='text-white text-[16px] font-normal text-opacity-80 flex items-center'>
-                        <FaUser size={20} />
+                    <a href="#" className='text-white text-[14px] font-normal text-opacity-80 flex items-center'>
+                        <FaUser size={19} />
                         <span className='pl-2'> Giriş Yap</span>
 
                     </a>
-                    <a href="#" className='text-white text-[16px] font-normal text-opacity-80 flex items-center'>
-                        <FaUserPlus size={20} />
+                    <a href="#" className='text-white text-[14px] font-normal text-opacity-80 flex items-center'>
+                        <FaUserPlus size={19} />
                         <span className='pl-2'> Kayıt Ol</span>
 
                     </a>
