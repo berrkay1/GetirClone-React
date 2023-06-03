@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
 import ReactFlagsSelect from 'react-flags-select';
 import Slider from "react-slick";
+import { useWindowWidth } from '@react-hook/window-size'
+
 const HeaderSection = () => {
 
+  const windowWidth = useWindowWidth();
+  console.log('windowWidth', windowWidth)
   const [selected, setSelected] = useState('')
 
   const settings = {
@@ -21,9 +25,9 @@ const HeaderSection = () => {
 
 
   return (
-    <div className='relative before:bg-gradient-to-r before:from-[#5D3EBC] before:to-transparent before:absolute before:top-0 before:left-0 before:z-20 before:w-full before:h-full h-[500px] z-0'  >
+    <div className='relative before:bg-gradient-to-r before:from-[#5D3EBC] before:to-transparent before:absolute before:top-0 before:left-0 before:z-20 before:w-full before:h-full h-auto md:h-[500px] z-0 '  >
 
-      <Slider {...settings}>
+     {windowWidth >= 768 && <Slider {...settings}>
         <div>
           <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg" alt="" />
         </div>
@@ -37,10 +41,10 @@ const HeaderSection = () => {
           <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg" alt="" />
         </div>
 
-      </Slider>
+      </Slider>}
 
-      <div className='container absolute top-0 text-white z-30 w-full h-full flex items-center justify-between  left-1/2 -translate-x-1/2'>
-        <div className='text-4xl font-semibold sm:hidden md:block'>
+      <div className='container relative md:absolute top-0 text-white z-30 w-full h-full flex items-center justify-between  left-1/2 -translate-x-1/2 2xl:px-32'>
+        <div className='text-4xl font-semibold hidden sm:block'>
           <img className='w-[180px]' src="https://getir.com/_next/static/images/bimutluluk-b3a7fcb14fc9a9c09b60d7dc9b1b8fd6.svg" alt="" />
 
           <div className='mt-10'>
@@ -49,7 +53,7 @@ const HeaderSection = () => {
           </div>
         </div>
 
-        <div className='bg-[#FAFAFA] p-6 rounded-lg w-[400px] sm:w-full '>
+        <div className='bg-[#FAFAFA] p-6 rounded-none sm:rounded-lg  sm:w-[400px] w-full  '>
           <h5 className=' text-[#5d3ebc] text-center text-[16px] font-semibold'>Giriş yap veya kayıt ol</h5>
           <div className='flex items-center justify-center my-4 w-full gap-x-2'>
             <ReactFlagsSelect

@@ -40,7 +40,7 @@ console.log('footerArr', footerArr)
 
 const Footer = () => {
   return (
-    <div className='container mx-auto bg-white'>
+    <div className='container mx-auto bg-white 2xl:px-32'>
       <div className='grid grid-cols-4 py-10'>
         <div className=''>
           <h4 className='mb-4 text-lg text-purple-500'>Getiri indirin!</h4>

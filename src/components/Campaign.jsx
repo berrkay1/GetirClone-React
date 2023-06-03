@@ -3,7 +3,7 @@ import React from 'react'
 const Campaign = () => {
   return (
     <div className='bg-[#FAFAFA] w-full z-0'>
-      <div className='container mx-auto py-6'>
+      <div className='container mx-auto 2xl:px-32 py-6'>
         <div className='text-[16px] font-semibold mb-2 text-gray-700'>Kampanyalar</div>
         <div className='bg-kampanyaBG bg-headerColor rounded-xl min-h-[320px] flex items-center my-6 justify-between'>
           <div className='text-white ml-12'>

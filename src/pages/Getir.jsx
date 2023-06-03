@@ -31,7 +31,7 @@ const Getir = () => {
             
             <HeaderSection />
             <Categories />
-            <Campaign />
+            {/* <Campaign /> */}
             <CartsCampagn cartList={cartList} />
             <Footer />
         </div>
