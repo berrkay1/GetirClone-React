@@ -28,22 +28,22 @@ const HeaderSection = () => {
 
       {windowWidth > 768 && <Slider {...settings}>
         <div>
-          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg" alt="" />
+          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-1.jpg" />
         </div>
         <div>
-          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg" alt="" />
+          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-2.jpg" />
         </div>
         <div>
-          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-3.jpg" alt="" />
+          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-3.jpg" />
         </div>
         <div>
-          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg" alt="" />
+          <img className='w-full h-[500px] object-cover' src="https://cdn.getir.com/getirweb-images/common/hero-posters/getir-mainpage-4.jpg" />
         </div>
 
       </Slider>}
 
       <div className='h-16 bg-purple-700 md:hidden text-yellow-400 text-lg  font-bold relative z-50 top-0 left-0 flex items-center justify-center'>
-          <span>getir</span>
+        <span>getir</span>
       </div>
       {/* <div>
       <FaMapMarkerAlt/>

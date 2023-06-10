@@ -1,6 +1,7 @@
 import React from 'react'
 import FooterMenu from './FooterMenu';
 
+
 const footerArr = [
   {
     title: "Getir'i keşfedin",
@@ -41,8 +42,8 @@ console.log('footerArr', footerArr)
 const Footer = () => {
   return (
     <div className='container mx-auto bg-white 2xl:px-32'>
-      <div className='grid grid-cols-4 py-10'>
-        <div className=''>
+      <div className='grid md:grid-cols-4 py-10 px-4 md:px-0'>
+        <div className='mb-4 md:mb-0'>
           <h4 className='mb-4 text-lg text-purple-500'>Getiri indirin!</h4>
           <div className='space-y-3 '>
             <img src={process.env.PUBLIC_URL + '/images/app.svg'} />
