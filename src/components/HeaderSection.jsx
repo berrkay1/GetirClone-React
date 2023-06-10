@@ -42,7 +42,7 @@ const HeaderSection = () => {
 
       </Slider>}
 
-      <div className='h-16 bg-purple-700 md:hidden text-yellow-400 text-lg  font-bold relative z-50 top-0 left-0 flex items-center justify-center'>
+      <div className='h-16 bg-[#5D3EBC] md:hidden text-yellow-400 text-lg  font-bold relative z-50 top-0 left-0 flex items-center justify-center'>
         <span>getir</span>
       </div>
       {/* <div>
