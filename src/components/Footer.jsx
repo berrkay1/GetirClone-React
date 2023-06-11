@@ -37,7 +37,7 @@ const footerArr = [
   },
 ];
 
-console.log('footerArr', footerArr)
+
 
 const Footer = () => {
   return (

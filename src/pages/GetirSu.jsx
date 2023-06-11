@@ -28,7 +28,7 @@ const GetirSu = () => {
   return (
   <>
       <GetirSuHeaderSection/>
-      <Campaign />
+      {/* <Campaign /> */}
       <CartsCampagn cartList={cartList} />
       <Footer />
     </>

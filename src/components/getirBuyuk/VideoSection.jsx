@@ -1,20 +1,23 @@
 import React from 'react'
 import { useEffect } from 'react';
 import { useState } from 'react';
-
+import { useWindowWidth } from '@react-hook/window-size'
+import ReactFlagsSelect from 'react-flags-select';
 const VideoSection = () => {
 
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
 
+    const windowWidth = useWindowWidth();
+    const [selected, setSelected] = useState('')
     const onVideoEnd = () => {
         if (currentVideoIndex === videoUrl.length - 1) {
             // Son video tamamlandığında, sırayı sıfırlayın.
             setCurrentVideoIndex(0);
-          } else {
+        } else {
             // Sonraki videoya geçin.
             setCurrentVideoIndex(currentVideoIndex + 1);
-          }
-       
+        }
+
     };
 
     const videoUrl = [
@@ -25,18 +28,46 @@ const VideoSection = () => {
         'https://cdn.getiryemek.com/banner/5_kunefe.mp4',
     ]
 
-    useEffect(()=>{
+    useEffect(() => {
 
-    },[currentVideoIndex])
+    }, [currentVideoIndex])
 
-   
+
     return (
-        <div className=' w-full h-[600px] '>
+        <div className='relative w-full h-auto md:h-[600px] '>
             {
-                videoUrl.map((video, index) => (
-                    <video  autoPlay style={{ display: index === currentVideoIndex ? 'block' : 'none' }} key={index} onEnded={onVideoEnd} className='w-full h-full object-cover' src={video}></video>
+                windowWidth > 768 && videoUrl.map((video, index) => (
+                    <video autoPlay style={{ display: index === currentVideoIndex ? 'block' : 'none' }} key={index} onEnded={onVideoEnd} className='w-full h-full object-cover' src={video}></video>
                 ))
             }
+
+            <div className='h-16 bg-[#5D3EBC] md:hidden  text-lg  font-bold relative z-50 top-0 left-0 flex items-center justify-center'>
+                <span className='text-yellow-400'>getir<span className='text-white'>yemek</span></span>
+            </div>
+
+            <div className='md:container relative md:absolute top-0 text-white z-30 w-full h-full flex items-center justify-between  left-1/2  -translate-x-1/2 2xl:px-32'>
+                <div className='text-4xl font-semibold hidden md:block'>
+                    
+                </div>
+
+                <div className='bg-[#FAFAFA] p-6 rounded-none md:rounded-lg  md:w-[400px] w-full'>
+                    <h5 className=' text-[#5d3ebc] text-center text-[16px] font-semibold'>Giriş yap veya kayıt ol</h5>
+                    <div className='flex items-center justify-center my-4 w-full gap-x-2'>
+                        <ReactFlagsSelect
+                            countries={["US", "GB", "FR", "DE", "IT", "TR"]}
+                            customLabels={{ US: "EN-US", GB: "EN-GB", FR: "FR", DE: "DE", IT: "IT", TR: '+90' }}
+                            selected='TR'
+                            className='flag pb-0 bg-white'
+                            onSelect={code => setSelected(code)}
+                        />
+                        <div className='relative w-full'>
+                            <input className=' input h-[56px] pb-1 rounded-sm w-full border-solid border-gray-200 border-2 focus:border-purple-600 outline-none mb-[5px]' />
+                            <span className='absolute text-gray-700 text-sm h-full left-8 top-0 flex items-center z-0 peer-hover:h-5'>Telefon Numarası</span>
+                        </div>
+                    </div>
+                    <button className='h-12 bg-[#FFD300] text-center w-full text-[#5d3ebc] font-semibold text-sm rounded-md hover:bg-[#7849F7] hover:text-[#FFD300] duration-200'>Telefon numarasıyla devam et</button>
+                </div>
+            </div>
         </div>
     )
 }

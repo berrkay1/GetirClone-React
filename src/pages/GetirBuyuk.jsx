@@ -29,7 +29,7 @@ const GetirBuyuk = () => {
     <>
       <GetirBigHeaderSec />
       <Categories />
-      <Campaign />
+      {/* <Campaign /> */}
       <CartsCampagn cartList={cartList} />
       <Footer />
     </>
