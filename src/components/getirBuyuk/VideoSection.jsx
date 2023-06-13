@@ -47,7 +47,7 @@ const VideoSection = () => {
 
             <div className='md:container relative md:absolute top-0 text-white z-30 w-full h-full flex items-center justify-between  left-1/2  -translate-x-1/2 2xl:px-32'>
                 <div className='text-4xl font-semibold hidden md:block'>
-                    
+
                 </div>
 
                 <div className='bg-[#FAFAFA] p-6 rounded-none md:rounded-lg  md:w-[400px] w-full'>

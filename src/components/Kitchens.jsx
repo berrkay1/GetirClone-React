@@ -31,7 +31,7 @@ const Kitchens = () => {
         const { className, onClick } = props;
         return (
             <button
-            className={`${className}!text-purple-700 absolute top-1/2 -left-7 -translate-y-1/2`}
+                className={`${className}!text-purple-700 absolute top-1/2 -left-7 -translate-y-1/2`}
                 onClick={onClick}
             >
                 <FaChevronLeft size={20} className='text-purple-700' />
@@ -41,13 +41,13 @@ const Kitchens = () => {
 
     return (
         <div className='bg-[#fafafa] w-full  z-40'>
-            <div className='container mx-auto py-6'>
+            <div className='container mx-auto py-6 '>
                 <div className='text-[16px] font-semibold mb-5 text-gray-700'>Mutfaklar</div>
                 <Slider {...settings}>
 
                     {
                         KitchenCategoryJson.map((item, idx) => (
-                            <div key={idx} className='py-2'>
+                            <div key={idx} className='py-2 flex items-center justify-center'>
                                 <div className='rounded-md mr-4 bg-white shadow-md '>
                                     <img className=' object-cover rounded-md px-2' src={item.image} />
                                     <div className='text-purple-600 text-xs text-center border-t-2 border-gray-100 py-3'>{item.title}</div>
