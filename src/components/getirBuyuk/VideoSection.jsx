@@ -3,6 +3,10 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { useWindowWidth } from '@react-hook/window-size'
 import ReactFlagsSelect from 'react-flags-select';
+import { RxMagnifyingGlass } from 'react-icons/rx';
+import { IoLocateSharp } from 'react-icons/io5';
+
+
 const VideoSection = () => {
 
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
@@ -51,6 +55,22 @@ const VideoSection = () => {
                 </div>
 
                 <div className='bg-[#FAFAFA] p-6 rounded-none md:rounded-lg  md:w-[400px] w-full'>
+
+                    <h5 className=' text-[#5d3ebc] text-center text-[16px] font-semibold'> Adresine getiren restoranları gör</h5>
+
+                    <div className='flex items-center justify-center my-4 w-full gap-x-2'>
+                        <div className='h-[56px] pb-1 shadow-sm rounded-sm w-full border-solid border-gray-300 border-2 outline-none mb-[5px] flex items-center justify-between px-3' >
+                            <div className='flex items-center space-x-2 px-1'>
+                                <RxMagnifyingGlass className='text-[#5d3ebc]' size={22} />
+                                <div className='text-gray-500 text-sm'>Örn. Etiler mh.</div>
+                            </div>
+                            <div className='flex items-center space-x-2 bg-[#a2a2a2] rounded-lg p-1.5'>
+                                <IoLocateSharp className='text-white text-opacity-80' size={22} />
+                                <div className='text-white text-opacity-80 font-semibold text-sm'>Konumumu bul</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <h5 className=' text-[#5d3ebc] text-center text-[16px] font-semibold'>Giriş yap veya kayıt ol</h5>
                     <div className='flex items-center justify-center my-4 w-full gap-x-2'>
                         <ReactFlagsSelect
@@ -61,7 +81,7 @@ const VideoSection = () => {
                             onSelect={code => setSelected(code)}
                         />
                         <div className='relative w-full'>
-                            <input className=' input h-[56px] pb-1 rounded-sm w-full border-solid border-gray-200 border-2 focus:border-purple-600 outline-none mb-[5px]' />
+                            <input className='input h-[56px] pb-1 rounded-sm w-full border-solid border-gray-200 border-2 focus:border-purple-600 outline-none mb-[5px]' />
                             <span className='absolute text-gray-700 text-sm h-full left-8 top-0 flex items-center z-0 peer-hover:h-5'>Telefon Numarası</span>
                         </div>
                     </div>
